@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    use HasFactory; // <-- Add this
-
-    protected $fillable = ['name', 'email', 'age']; // <-- Needed for mass assignment
+    protected $fillable = [
+        'student_number',
+        'name',
+        'course',
+        'age',
+        'email',
+    ];
 }
